@@ -33,9 +33,8 @@ public class Main {
                 case 2 : res -= curr; break;
                 case 3 : res *= curr; break;
                 case 4 : res /= curr; 
-                  if(curr == 0) {res = 0; System.out.print("\n---------------------------------------\nCannot divide by zero.");
-                  }
-                  break;
+                  //try to comment out line below and divide by 0
+                  if(curr == 0) {res = 0; System.out.print("\n---------------------------------------\nCannot divide by zero.");} break;
                 case 5 : System.out.print("\n---------------------------------------\nCleared."); res = 0; break;
                 case 6 : System.exit(0); break;
                 default : System.out.print("\n---------------------------------------\nError: Please try again.");
